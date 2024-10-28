@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-ver-mas {
+  max-width: 100vw;
+  display: grid;
+  place-items: center;
+}
+.proyecto-container-vermas {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proyecto-container-vermas .carta-proyecto-vermas {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.proyecto-container-vermas .carta-proyecto-vermas .imagen {
+  width: 35%;
+  height: 90%;
+}
+.proyecto-container-vermas .carta-proyecto-vermas .texto {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 90%;
+}
+.proyecto-container-vermas .carta-proyecto-vermas .texto h1 {
+  font-size: 3rem;
+}
+.proyecto-container-vermas .carta-proyecto-vermas .texto p {
+  font-size: 1.3rem;
+  text-align: center;
+  width: 85%;
+}
+.proyecto-container-vermas .carta-proyecto-vermas .texto ul li {
+  list-style: none;
+}
+.proyecto-container-vermas .carta-proyecto-vermas .texto button {
+}

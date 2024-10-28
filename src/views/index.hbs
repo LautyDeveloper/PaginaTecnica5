@@ -1,0 +1,83 @@
+<main>
+  <article class="banner-index">
+  </article>
+  <article class="article-relevant" id="relevante">
+    <section class="relevant-title">
+      <h1>Lo más relevante</h1>
+    </section>
+    <section class="cards">
+      {{#if consultas.[1]}}
+        {{#each consultas.[1]}}
+          <div class="carta-azul">
+            <h4>{{this.novedad}}</h4>
+            <p>{{this.descripcion}}</p>
+            <a href="#">ver mas</a>
+          </div>
+        {{/each}}
+        {{else}}
+        <div class="carta-azul">
+          <p>No hay ninguna novedad</p>
+        </div>
+      {{/if}}
+
+      {{! 
+        
+        <div class="carta-naranja">
+
+        </div>
+        <div class="carta-celeste">
+
+        </div>
+        <div class="carta-azuloscuro">
+
+        </div>
+        
+      }}
+
+    </section>
+  </article>
+  <article class="article-noticias">
+    <section class="noticias-title">
+      <h2>Noticias</h2>
+    </section>
+    <section class="cartas-noticias">
+
+      {{#if consultas.[0]}}
+        {{#each consultas.[0]}}
+          <div class="carta-noticia">
+            <p>{{this.descripcion}}</p>
+            <a href="#">ver mas</a>
+          </div>
+        {{/each}}
+        {{else}}
+        <div class="carta-noticia">
+          <p>No hay ninguna noticia</p>
+        </div>
+      {{/if}}
+    </section>
+  </article>
+  <article class="articleVideoCarreras">
+    <section class="video">
+      <video src="/media/video.mkv" controls width="100%"></video>
+    </section>
+    <section class="carreras">
+      <div class="carreras-title">
+        <h3>Carreras</h3>
+      </div>
+      <div id="#carreras" class="container-cartas">
+        <div class="carta-carrera">
+          <p>Supongamos que es la carta de programacion</p>
+          <a href="/programacion">Ver Más</a>
+        </div>
+        <div class="carta-carrera">
+          <p>Supongamos que es la carta de informatica</p>
+          <a href="/informatica">Ver Más</a>
+        </div>
+        <div class="carta-carrera">
+          <p>Supongamos que es la carta de mmo</p>
+          <a href="/mmo">Ver Más</a>
+        </div>
+      </div>
+    </section>
+  </article>
+</main>

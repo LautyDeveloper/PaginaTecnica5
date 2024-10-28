@@ -1,0 +1,21 @@
+<main class="main-ver-mas">
+    <div class="proyecto-container-vermas">
+        <div class="carta-proyecto-vermas">
+            <div class="imagen">
+                <img src="{{proyectoGrande.imagenUrl}}" alt="">
+            </div>
+            <div class="texto">
+                <h1>{{proyectoGrande.proyectoNombre}}</h1>
+                <p>{{proyectoGrande.descripcionProyecto}}</p>
+                <div class="datos">
+                    <ul>
+                        <li><b>Carrera:</b>{{proyectoGrande.carrera}}</li>
+                        <li><b>Curso:</b>{{proyectoGrande.cursos}}</li>
+                    </ul>
+                </div>
+                <!-- Cambiado el enlace de descarga -->
+                <a href="/download/{{proyectoGrande.idProyecto}}" download>Descargar archivo</a>
+            </div>
+        </div>
+    </div>
+</main>

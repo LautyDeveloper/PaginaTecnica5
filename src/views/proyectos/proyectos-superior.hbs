@@ -1,0 +1,88 @@
+<main>
+  <article class="banner-proyectos">
+  </article>
+  <article class="proyectos">
+    <section class="proyectos-programacion">
+      <p>Proyectos de Programación</p>
+      <div class="galeria-proyectos">
+        {{#if proyectos}}
+        {{#each proyectos}}
+        {{#if (eq carrera "Programacion")}}
+        <div class="carta-proyectos">
+          <div class="carta-proyectos-img">
+            <img src="{{imagenUrl}}" alt="">
+          </div>
+          <div class="carta-proyectos-title">
+            <p class="titulo">{{proyectoNombre}}</p>
+            <a href="/ver-mas/{{idProyecto}}">Ver Más</a>
+          </div>
+        </div>
+        {{/if}}
+        {{/each}}
+        {{else}}
+        <div>
+          <h3>No hay ningun proyecto</h3>
+          <a href="/">Ir al inicio</a>
+        </div>
+        {{/if}}
+
+
+      </div>
+    </section>
+    <section class="proyectos-informatica">
+      <p>Proyectos de Informática</p>
+      <div class="galeria-proyectos">
+        {{#if proyectos}}
+        {{#each proyectos}}
+        {{#if (eq carrera "Informatica")}}
+        <div class="carta-proyectos">
+          <div class="carta-proyectos-img">
+            <img src="{{imagenUrl}}" alt="">
+          </div>
+          <div class="carta-proyectos-title">
+            <p>{{proyectoNombre}}</p>
+            <a href="/ver-mas/{{idProyecto}}">Ver Más</a>
+          </div>
+        </div>
+        {{/if}}
+        {{/each}}
+        {{else}}
+        <div>
+          <h3>No hay ningun proyecto</h3>
+          <a href="/">Ir al inicio</a>
+        </div>
+        {{/if}}
+
+
+      </div>
+    </section>
+    <section class="proyectos-mmo">
+      <p>Proyectos de Maestro Mayor de Obras</p>
+      <div class="galeria-proyectos">
+        {{#if proyectos}}
+        {{#each proyectos}}
+        {{#if (eq carrera "Maestro Mayor de Obras")}}
+        <div class="carta-proyectos">
+          <div class="carta-proyectos-img">
+            <img src="{{imagenUrl}}" alt="">
+          </div>
+          <div class="carta-proyectos-title">
+            <p>{{proyectoNombre}}</p>
+            <a href="/ver-mas/{{idProyecto}}">Ver Más</a>
+          </div>
+        </div>
+        {{/if}}
+        {{/each}}
+        {{else}}
+        <div>
+          <h3>No hay ningun proyecto</h3>
+          <a href="/">Ir al inicio</a>
+        </div>
+        {{/if}}
+
+
+      </div>
+    </section>
+  </article>
+
+</main>

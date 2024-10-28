@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Onest", sans-serif;
+  text-decoration: none;
+  list-style: circle;
+}
+
+.banner {
+  display: flex;
+  background-image: url(../media/banner\ proyectos.png);
+  width: 100%;
+  height: 25vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.proyectos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  gap: 10px;
+  margin-top: 20px;
+}
+.proyectos-programacion,
+.proyectos-informatica,
+.proyectos-mmo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.proyectos p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.galeria-proyectos {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  width: 100%;
+  gap: 10px;
+  height: 22rem;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  margin-top: 10px;
+  padding-inline: 10px;
+  margin-bottom: 40px;
+}
+.carta-proyectos {
+  min-width: 60%;
+  height: 100%;
+}
+.carta-proyectos .carta-proyectos-img {
+  width: 100%;
+  height: 70%;
+}
+.carta-proyectos-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.carta-proyectos-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 30%;
+  gap: 10px;
+  flex-direction: column;
+  background-color: #191e85;
+  border-radius: 0 0 10px 10px;
+}
+.carta-proyectos-title .titulo {
+  font-size: 30px;
+  color: #fff;
+}
+.carta-proyectos-title .curso {
+  font-size: 15px;
+  color: #fff;
+}
+.carta-proyectos-title a {
+  padding: 10px 5px;
+  background-color: #ff8d0c;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+@media (min-width: 920px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Onest", sans-serif;
+    text-decoration: none;
+    list-style: circle;
+  }
+
+  .banner-proyectos {
+    display: flex;
+    background-image: url(../media/banner\ proyectos.png);
+    width: 100%;
+    height: 85vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .proyectos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .proyectos p {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .proyectos-programacion,
+  .proyectos-informatica,
+  .proyectos-mmo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .galeria-proyectos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+    height: unset;
+    flex-wrap: wrap;
+    overflow-x: unset;
+    margin-top: 20px;
+    padding-inline: 10%;
+    margin-bottom: 40px;
+  }
+  .carta-proyectos {
+    width: 18rem;
+    height: 25rem;
+    min-width: 0;
+  }
+  .carta-proyectos .carta-proyectos-img {
+    width: 100%;
+    height: 75%;
+    border-radius: 10px;
+  }
+  .carta-proyectos-img img {
+    width: 100%;
+    height: 19.2rem;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  .carta-proyectos-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 25%;
+    flex-direction: column;
+    background-color: #191e85;
+    border-radius: 0 0 10px 10px;
+  }
+  .carta-proyectos-title p {
+    font-size: 30px;
+    color: #fff;
+  }
+  .carta-proyectos-title a {
+    padding: 10px 5px;
+    background-color: #ff8d0c;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+  }
+}
