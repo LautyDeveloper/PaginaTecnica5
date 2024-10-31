@@ -282,6 +282,10 @@ main {
   text-align: center;
   gap: 15px;
 }
+.carta-carrera p {
+  font-weight: bold;
+  font-size: 30px;
+}
 .carta-carrera a {
   border: none;
   padding: 10px 5px;
