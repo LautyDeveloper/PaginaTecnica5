@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Onest", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+h1 {
+  font-size: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+main .noticia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+  width: 95vw;
+  margin-inline: 2.5%;
+  gap: 30px;
+}
+.noticia .carta-noticia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 20px;
+}
+.titulo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.titulo h2 {
+  font-size: 1.3rem;
+  color: #ff8d0c;
+}
+.descripcion {
+  margin-top: 10px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+}
+.fecha {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 12px;
+  margin-top: 10px;
+  width: 100%;
+}
+.linea {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  margin-top: 20px;
+}
+hr {
+  width: 100%;
+}
+@media (min-width: 920px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Onest", sans-serif;
+    list-style: none;
+    text-decoration: none;
+  }
+  h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .noticia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 70%;
+    margin-inline: 15%;
+    gap: 50px;
+  }
+  .carta-noticia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .titulo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .titulo h2 {
+    font-size: 2.3rem;
+    color: #ff8d0c;
+  }
+  .descripcion {
+    margin-top: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+  }
+  .fecha {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 15px;
+    margin-top: 12px;
+    width: 100%;
+  }
+  .linea {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    margin-top: 20px;
+  }
+  hr {
+    width: 100%;
+  }
+}

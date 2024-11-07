@@ -1,1 +1,26 @@
-<main></main>
+<main>
+    <body>
+    <h1>Noticas Para Profesores</h1>
+    {{#if noticias}}
+    {{#each noticias}}
+    <article class="noticia">
+        <section class="carta-noticia">
+            <div class="titulo">
+                <h2>{{nombreNoticiaProfe}}</h2>
+            </div>
+            <div class="descripcion">
+                <p>{{descripcionNoticiaProfe}}</p>
+            </div>
+            <div class="fecha">
+                <p>{{fecha}}</p>
+            </div>
+            <div class="linea">
+                <hr>
+            </div>
+        </section>
+        {{/each}}
+        {{/if}}
+
+    </article>
+</body>
+</main>
