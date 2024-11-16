@@ -5,10 +5,10 @@ import { join, dirname, extname } from "path";
 import { fileURLToPath } from "url";
 import pool from "./database.js";
 import carrerasRoutes from "./routes/carreras.routes.js";
-import proyectosRoutes from "./routes/proyectos.routes.js"
-import alumnosRoutes from "./routes/alumnos.routes.js"
-import profesoresRoutes from "./routes/profesores.routes.js"
-import nosotrosRoutes from "./routes/nosotros.routes.js"
+import proyectosRoutes from "./routes/proyectos.routes.js";
+import alumnosRoutes from "./routes/alumnos.routes.js";
+import profesoresRoutes from "./routes/profesores.routes.js";
+import nosotrosRoutes from "./routes/nosotros.routes.js";
 import hbs from "handlebars";
 
 //Inicializacion
@@ -39,13 +39,14 @@ app.use(express.json());
 app.get("/", async (req, res) => {
   try {
     const [result] = await pool.query("SELECT * FROM novedades");
-    const [result2] = await pool.query("SELECT * FROM novedades ORDER BY id DESC LIMIT 4");
+    const [result2] = await pool.query(
+      "SELECT * FROM novedades ORDER BY idNovedad DESC LIMIT 4"
+    );
 
-    res.render("index", {consultas: [result, result2]});
+    res.render("index", { consultas: [result, result2] }); // Envías la respuesta aquí.
   } catch (err) {
-    res.status(500).json({ message: err.message });
+    res.status(500).json({ message: err.message }); // Manejas errores aquí.
   }
-  res.render("index");
 });
 
 //Public files

@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Onest", sans-serif;
+}
+
+.main-nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 90%;
+}
+
+.main-nosotros .nosotros-container {
+  height: 100%;
+}
+
+.main-nosotros h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.main-nosotros p {
+  font-size: 20px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+@media (max-width: 950px) {
+  .main-nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+}
