@@ -120,14 +120,15 @@ main {
 .article-relevant .relevant-title {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
+  text-align: center;
   height: 10%;
   width: 100%;
-  margin-top: 20px;
 }
 .relevant-title h1 {
   padding-left: 20px;
   font-size: 23px;
+  text-align: center;
 }
 .cards {
   display: flex;
@@ -135,51 +136,35 @@ main {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 90%;
+  height: 100%;
   width: 100%;
   gap: 20px;
   padding-inline: 10px;
   margin-top: 20px;
 }
 .carta-azul {
-  height: 12rem;
-  width: 10rem;
+  height: 20rem;
+  width: 15rem;
   border-radius: 20px;
   background-color: #191e85;
   display: grid;
   place-items: center;
   text-align: center;
-  padding: 0 5px;
+  padding: 20px;
   color: #fff;
   padding: 10px;
 }
 
 .carta-azul a {
   color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
   background-color: #ff8d0c;
   display: grid;
   place-items: center;
   border-radius: 20px;
-  width: 80px;
-  height: 35px;
-}
-.carta-naranja {
-  height: 12rem;
-  width: 10rem;
-  border-radius: 20px;
-  background-color: #ff8d0c;
-}
-.carta-celeste {
-  height: 12rem;
-  width: 10rem;
-  border-radius: 20px;
-  background-color: #1f99eb;
-}
-.carta-azuloscuro {
-  height: 12rem;
-  width: 10rem;
-  border-radius: 20px;
-  background-color: #0e005a;
+  width: 120px;
+  height: 40px;
 }
 .article-noticias {
   display: flex;
@@ -212,10 +197,13 @@ main {
   gap: 20px;
 }
 .carta-noticia {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   height: 20rem;
-  min-width: 100%;
+  min-width: 85%;
+  text-align: center;
   background-color: #191e85;
   border-radius: 20px;
   color: #fff;
@@ -230,6 +218,8 @@ main {
   background-color: #ff8d0c;
   display: grid;
   place-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
   padding: 10px 20px;
   border-radius: 20px;
 }
@@ -481,28 +471,11 @@ main {
     gap: 70px;
   }
   .carta-azul {
-    height: 18rem;
-    width: 13rem;
+    height: 22rem;
+    width: 17rem;
     border-radius: 20px;
+    padding: 40px;
     background-color: #191e85;
-  }
-  .carta-naranja {
-    height: 18rem;
-    width: 13rem;
-    border-radius: 20px;
-    background-color: #ff8d0c;
-  }
-  .carta-celeste {
-    height: 18rem;
-    width: 13rem;
-    border-radius: 20px;
-    background-color: #1f99eb;
-  }
-  .carta-azuloscuro {
-    height: 18rem;
-    width: 13rem;
-    border-radius: 20px;
-    background-color: #0e005a;
   }
   .article-noticias {
     display: flex;
@@ -525,21 +498,24 @@ main {
   .cartas-noticias {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
     padding-top: 20px;
     overflow-x: scroll;
-    width: 95vw;
+    max-width: 95vw;
     height: 80%;
     gap: 20px;
   }
   .carta-noticia {
     height: 25rem;
-    min-width: 20%;
+    min-width: 25%;
+    max-width: 25%;
     background-color: #191e85;
     border-radius: 20px;
     color: #fff;
+    justify-content: space-evenly;
+    padding: 30px;
   }
   .articleVideoCarreras {
     display: flex;

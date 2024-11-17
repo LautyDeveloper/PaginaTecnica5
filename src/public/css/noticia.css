@@ -1,0 +1,21 @@
+.carta-novedad-vermas {
+  width: 1200px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carta-novedad-vermas .texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 70%;
+}
+.carta-novedad-vermas .texto p {
+  text-align: center;
+  width: 75%;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}

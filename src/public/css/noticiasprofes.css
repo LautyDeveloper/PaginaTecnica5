@@ -22,7 +22,7 @@ main .noticia {
   margin-inline: 2.5%;
   gap: 30px;
 }
-.noticia .carta-noticia {
+.noticia .carta-noticia-profes {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,7 +90,7 @@ hr {
     margin-inline: 15%;
     gap: 50px;
   }
-  .carta-noticia {
+  .carta-noticia-profes {
     display: flex;
     align-items: center;
     justify-content: center;

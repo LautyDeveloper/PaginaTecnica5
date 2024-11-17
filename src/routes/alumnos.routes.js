@@ -11,5 +11,4 @@ router.get("/intensificacion", async (req, res) => {
   res.render("alumnos/intensificacion");
 });
 
-
 export default router;

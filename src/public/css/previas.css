@@ -6,6 +6,9 @@
   list-style: none;
   text-decoration: none;
 }
+body {
+  margin-top: 50px;
+}
 main {
   display: grid;
   place-items: center;

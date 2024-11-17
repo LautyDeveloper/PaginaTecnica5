@@ -11,7 +11,7 @@
           <div class="carta-azul">
             <h4>{{this.novedad}}</h4>
             <p>{{this.descripcion}}</p>
-            <a href="#">ver mas</a>
+            <a href="noticia/{{idNovedad}}">Ver Mas</a>
           </div>
         {{/each}}
         {{else}}
@@ -19,20 +19,6 @@
           <p>No hay ninguna novedad</p>
         </div>
       {{/if}}
-
-      {{! 
-        
-        <div class="carta-naranja">
-
-        </div>
-        <div class="carta-celeste">
-
-        </div>
-        <div class="carta-azuloscuro">
-
-        </div>
-        
-      }}
 
     </section>
   </article>
@@ -46,7 +32,7 @@
         {{#each consultas.[0]}}
           <div class="carta-noticia">
             <p>{{this.descripcion}}</p>
-            <a href="#">ver mas</a>
+            <a href="noticia/{{idNovedad}}">Ver Mas</a>
           </div>
         {{/each}}
         {{else}}

@@ -9,6 +9,7 @@ import proyectosRoutes from "./routes/proyectos.routes.js";
 import alumnosRoutes from "./routes/alumnos.routes.js";
 import profesoresRoutes from "./routes/profesores.routes.js";
 import nosotrosRoutes from "./routes/nosotros.routes.js";
+import novedadesRoutes from "./routes/novedades.routes.js";
 import hbs from "handlebars";
 
 //Inicializacion
@@ -56,6 +57,7 @@ app.use(proyectosRoutes);
 app.use(alumnosRoutes);
 app.use(profesoresRoutes);
 app.use(nosotrosRoutes);
+app.use(novedadesRoutes);
 
 // Registro del helper
 hbs.registerHelper("eq", (a, b) => {
