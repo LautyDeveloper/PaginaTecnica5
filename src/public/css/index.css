@@ -636,7 +636,7 @@ main {
 }
 
 .header .navegation ul li .quiero {
-  background-color: #1f99eb;
+  background-color: #ff8d0c;
   color: white;
-  margin-left: 10px;
+  width: 100%;
 }
