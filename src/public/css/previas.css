@@ -26,7 +26,7 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 95%;
+  max-width: 100%;
   margin-inline: 2.5%;
 }
 .btns-previas {
@@ -42,22 +42,28 @@ main {
 }
 .btns-previas .divisor {
   width: 90%;
+  height: 700px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 3px solid #ff8d0c;
+  padding-bottom: 20px;
 }
 .btns-previas .uno {
   justify-content: center;
+  height: 200px;
 }
 .btns-previas .dos {
   justify-content: space-evenly;
+  height: 500px;
 }
 .botones {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  width: 30%;
+  width: 50%;
   height: 200px;
   background-color: #191e85;
   color: white;
@@ -105,8 +111,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
-    margin-inline: 15%;
+    text-align: center;
+    width: 100%;
     margin-top: 20px;
     font-size: 20px;
   }
@@ -119,6 +125,17 @@ main {
     margin-top: 40px;
     margin-bottom: 20px;
     gap: 20px;
+  }
+  .btns-previas .divisor {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 350px;
+  }
+  .btns-previas .uno {
+    justify-content: center;
+  }
+  .btns-previas .dos {
+    justify-content: space-evenly;
   }
   .botones {
     width: 25%;

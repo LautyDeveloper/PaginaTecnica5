@@ -1,0 +1,26 @@
+.intensificaciones-container {
+  display: grid;
+  padding: 5%;
+  gap: 35px;
+}
+
+.intensificaciones-container h2 {
+  font-size: 2.5rem;
+}
+
+.intensificaciones-container p {
+  font-size: 1.3rem;
+}
+
+.intensificaciones-container hr {
+  border: 0;
+  border-top: 2px solid #ff5733; /* Define el color y grosor */
+}
+
+.intensificaciones-container a {
+  color: #ff5733;
+}
+
+.intensificaciones-container a:hover {
+  color: #d4600d;
+}
