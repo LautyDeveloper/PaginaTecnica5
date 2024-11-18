@@ -7,6 +7,10 @@
   list-style: circle;
 }
 
+body {
+  margin-top: 40px;
+}
+
 .banner {
   display: flex;
   background-image: url(../media/banner\ proyectos.png);
@@ -42,11 +46,11 @@
 .galeria-proyectos {
   display: flex;
   align-items: center;
-  justify-content: start;
-  flex-direction: row;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   gap: 10px;
-  height: 22rem;
+  height: 100vh;
   flex-wrap: nowrap;
   overflow-x: scroll;
   margin-top: 10px;
@@ -176,7 +180,7 @@
     border-radius: 0 0 10px 10px;
   }
   .carta-proyectos-title p {
-    font-size: 30px;
+    font-size: 20px;
     color: #fff;
   }
   .carta-proyectos-title a {

@@ -2,7 +2,16 @@
     <div class="proyecto-container-vermas">
         <div class="carta-proyecto-vermas">
             <div class="imagen">
-                <img src="{{proyectoGrande.imagenUrl}}" alt="">
+                <iframe
+                    width="100%"
+                    height="100%"
+                    src="{{proyectoGrande.srcVideo}}"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
             </div>
             <div class="texto">
                 <h1>{{proyectoGrande.proyectoNombre}}</h1>

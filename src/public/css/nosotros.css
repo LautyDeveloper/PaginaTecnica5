@@ -23,10 +23,23 @@
   margin: 0;
 }
 
+.directivo {
+  font-size: 20px;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-nosotros p {
   font-size: 20px;
   letter-spacing: 2px;
   word-spacing: 5px;
+  width: 90%;
+  text-align: center;
 }
 
 @media (max-width: 950px) {

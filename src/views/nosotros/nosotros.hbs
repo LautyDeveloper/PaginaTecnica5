@@ -1,21 +1,22 @@
 <main class="main-nosotros">
 <body>
     <article class="nosotros-container">
-        <div>
+        <div class="contenedor">
+            {{#if equipo}}
             <h1>Sobre Nosotros 🫡👋</h1>
             <p>Hola somos la <b>Escuela Técnica N°5 Doctor Manuel Sadosky</b>, ubicada en <b>C. 368 Esq. 316, B1886 Ranelagh</b>, Provincia de Buenos Aires, barrio luz. Ofrecemos tres tecnicaturas muy interesantes, técnico en <b>Informática</b>, técnico en <b>Programación</b> y técnico <b>Maestro Mayor de Obra.</b>
             Nuestro propósito es que nuestros alumnos salgan preparados para la vida y su vida laboral sabiendo todo lo que se debe aprender en una secundaria y todo lo que debe saber un técnico desde ciclo básico hasta ciclo superior.
             Los esperamos de <b>8:00 a 15:00</b> para poder visitar o consultar dudas a la institución. los esperamos!!</p>
         </div>
-        <div>
+        <div class="contenedor">
             <h2>¡Nuestro Equipo Directivo!😎😉:</h2>
             <ul>
-                <li><b>Directora:</b>Veronica Antivero</li>
-                <li><b>Vicedirectora:</b>Romina Oscares</li>
-                <li><b>Vicedirectora:</b>Erica Moreira</li>
-                <li><b>Vicedirector:</b>Gustavo Gomez</li>
+                {{#each equipo}}
+                <li class="directivo"><b>{{Cargo}}:</b>{{Nombre}}{{Apellido}}</li>
             </ul>
         </div>
+        {{/each}}
+        {{/if}}
     </article>
 </body>
 </html>
