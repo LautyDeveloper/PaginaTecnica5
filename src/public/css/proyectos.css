@@ -82,8 +82,8 @@ body {
   background-color: #191e85;
   border-radius: 0 0 10px 10px;
 }
-.carta-proyectos-title .titulo {
-  font-size: 30px;
+.carta-proyectos-title p {
+  font-size: 25px;
   color: #fff;
 }
 .carta-proyectos-title .curso {

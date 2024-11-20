@@ -10,8 +10,10 @@
   place-items: center;
 }
 .proyecto-container-vermas {
+  margin-top: 70px;
+  display: flex;
   width: 100%;
-  height: 700px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,8 +45,35 @@
   text-align: center;
   width: 85%;
 }
+.proyecto-container-vermas .carta-proyecto-vermas .texto ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .proyecto-container-vermas .carta-proyecto-vermas .texto ul li {
   list-style: none;
 }
-.proyecto-container-vermas .carta-proyecto-vermas .texto button {
+
+@media (max-width: 800px) {
+  .proyecto-container-vermas .carta-proyecto-vermas {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .proyecto-container-vermas .carta-proyecto-vermas .imagen {
+    width: 90%;
+  }
+  .proyecto-container-vermas .carta-proyecto-vermas .texto {
+    width: 100%;
+    height: auto;
+  }
+  .proyecto-container-vermas .carta-proyecto-vermas .texto h1 {
+    font-size: 2rem;
+  }
+  .proyecto-container-vermas .carta-proyecto-vermas .texto p {
+    width: 100%;
+    margin: 10px;
+  }
 }
