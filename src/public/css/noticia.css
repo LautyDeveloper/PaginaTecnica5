@@ -3,18 +3,30 @@
 }
 .novedad-container-vermas {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: grid;
   place-items: center;
 }
 .carta-novedad-vermas {
-  width: 100%;
+  max-width: 100vw;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.carta-novedad-vermas .imagen {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carta-novedad-vermas .imagen img {
+  height: 90%;
+  width: 90%;
+}
+
 .carta-novedad-vermas .texto {
   display: flex;
   flex-direction: column;
@@ -27,5 +39,5 @@
   width: 70%;
   letter-spacing: 2px;
   word-spacing: 5px;
-  margin-top: 15px;
+  margin: 15px;
 }

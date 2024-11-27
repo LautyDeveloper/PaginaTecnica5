@@ -1,17 +1,19 @@
+
 <main>
   <article class="banner-index">
   </article>
   <article class="article-relevant" id="relevante">
     <section class="relevant-title">
-      <h1>Lo más relevante</h1>
+      <h1>Lo más reciente</h1>
     </section>
+    <hr>
     <section class="cards">
       {{#if consultas.[1]}}
         {{#each consultas.[1]}}
           <div class="carta-azul">
             <h4>{{this.novedad}}</h4>
             <p>{{this.descripcion}}</p>
-            <a href="noticia/{{idNovedad}}">Ver Mas</a>
+            <a href="noticia/{{idNovedad}}">Ver Más</a>
           </div>
         {{/each}}
         {{else}}
@@ -26,13 +28,14 @@
     <section class="noticias-title">
       <h2>Noticias</h2>
     </section>
+    <hr>
     <section class="cartas-noticias">
 
       {{#if consultas.[0]}}
         {{#each consultas.[0]}}
-          <div class="carta-noticia">
+          <div class="carta-noticia" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)),url({{this.imagenUrl}}); background-position:center; background-size:cover; background-repeat:no-repeat;" >
             <p>{{this.descripcion}}</p>
-            <a href="noticia/{{idNovedad}}">Ver Mas</a>
+            <a href="noticia/{{idNovedad}}">Ver Más</a>
           </div>
         {{/each}}
         {{else}}

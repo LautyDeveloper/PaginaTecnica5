@@ -90,6 +90,13 @@ ul{
     border-radius: 7px;
     padding: 7px 5px;
     font-weight: bold;
+    transition: all 0.2s;
+}
+
+.botones-informatica a:hover{
+    background-color: #fff;
+    color: #FF8D0C;
+    border:outset 1px #FF8D0C;
 }
 
 @media (min-width: 920px){
